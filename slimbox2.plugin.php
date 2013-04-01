@@ -21,7 +21,7 @@ Class SlimBox2 extends Plugin
       Update::add( 'RecentComments', '41960DE6-2845-11DE-95C0-D3A656D89593',  $this->info->version );
    }
 
-   public function action_template_header_9() 
+   public function action_template_header() 
    {
       Stack::add( 'template_stylesheet', array( URL::get('ajax', array('context' => 'slimbox2_css')), 'screen' ), 'slimbox2' );
       Stack::add('template_header_javascript', Site::get_url('scripts') . '/jquery.js', 'jquery');
